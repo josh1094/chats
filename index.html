@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init("yLJ0W24IPSjjlW24A");
+    })();
+    </script>
+</head>
+<body>
+    <div id="saveId"></div>
+    <div class="container">
+        <div class="head">
+            <div class="logo">Send messages by EMAIL </div>
+            <button class="exit-btn" onclick="exitButton()">Exit</button>
+        </div>
+        <div class="inputs">
+            <label for="name" class="nameL1">Name</label>
+            <input type="text" id="name" autocomplete="off" placeholder="Your name!!!">
+            <label for="email" class="emailL1">Email</label>
+            <input type="email" id="email" placeholder="Receiver's email">
+            <label for="message" class="messageL1">Message</label>
+            <textarea id="message" rows="3"></textarea>
+        </div>
+        <button id="send" onclick="sendMail()">Send</button>
+    </div>
+
+    <div class="logins active">
+        <div class="title">
+            <div class="log">Log in</div>
+            <button class="done-button" onclick="loginButton()">Done</button>
+        </div>
+        <div class="input">
+            <label for="name-1" class="label-1">Name</label>
+            <input type="text" id="name-1" class="name" autocomplete="off">
+            <label for="id" class="label-2">Password</label>
+            <input type="password" id="id-1" class="id" autocomplete="off">
+        </div>
+        <span class="text">
+            Don't have account? <span class="sign-text" onclick="signin()">Sign up</span>
+        </span>
+    </div>
+
+    <div class="signup">
+        <div class="title">
+            <div class="log">Sign up</div>
+            <button class="done-button" onclick="signButton()">Done</button>
+        </div>
+        <div class="input">
+            <label for="name-2" class="label-1">Name</label>
+            <input type="name" id="name-2" class="name" autocomplete="off">
+            <label for="id" class="label-2">Password</label>
+            <input type="password" id="id-2" class="id" autocomplete="off">
+        </div>
+    </div>
+</body>
+</html>
+<script src="main.js"></script>
+<style>
+ 
+</style>
